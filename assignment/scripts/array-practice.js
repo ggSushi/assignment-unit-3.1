@@ -95,17 +95,28 @@ console.log('Now, my fave foods are', faveFoods);
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 
-
+faveFoods.sort();
+faveFoods.reverse();
+console.log(`Reorganized my list:`, faveFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
 /*I'm going to try to do it through the arrayName.join function and the for loop */
+
 //arrayName.join();
 console.log(faveFoods.join(' and '));
+
 //For loop
+
 let conj = 'and';
+/* Gonna disable this code for a little bit
+
+for (let index of faveFoods) {
+    if ()
+}
+*/
 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
