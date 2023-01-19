@@ -109,14 +109,17 @@ console.log(`Reorganized my list:`, faveFoods);
 console.log(faveFoods.join(' and '));
 
 //For loop
-
-let conj = 'and';
-/* Gonna disable this code for a little bit
-
-for (let index of faveFoods) {
-    if ()
+let combineFoods ='';
+for (let i = 0; i < faveFoods.length; i += 1) {
+    console.log(faveFoods[i]);
+    if (i === faveFoods.length - 1) {
+        combineFoods += faveFoods[i];
+    } else {
+        combineFoods += `${faveFoods[i]} and `; //<-- this is what changes the value
+    }
 }
-*/
+console.log(combineFoods); /* <-- This refers to the new variable made that has the
+new value given from the code in the loop.*/
 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -127,3 +130,15 @@ for (let index of faveFoods) {
 
 let everything = faveFoods.concat(animalArray);
 console.log(everything);
+
+
+// Practicing While loops in class 1.18.23
+
+let ingred = ['salt', 'pepper', 'chicken'];
+let max = ingred.length;
+let start = 0;
+
+while (start < max) {
+    console.log(ingred[start]);
+    start += 1;
+}
